@@ -1,0 +1,25 @@
+       						   Linux Assignment-3
+							Question-1
+
+
+To compress a file to reduce the size of the file, bzip2 command can be used:
+>>bzip2 filename.txt
+>>ls
+The output would be that the file in in bz2 form.
+
+
+
+							Question-2
+
+Normally bzip2 command compress the file and deletes the source file but bzip2 command with argument -k will compress the file by keeping the source file undeleted.
+>>bzip2 -k filename.txt
+Then the output will be the bz2 file including previous one.
+
+
+						
+							Question-3
+
+
+When createing user accounts with the useradd or adduser utilities, the -shell flag can be used to specify the name of a user's login shell other than specified in the respective configuration files.
+
+

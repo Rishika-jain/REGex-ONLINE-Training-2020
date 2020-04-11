@@ -1,0 +1,40 @@
+ 					Linux (Assignment 1)
+						Question-1
+
+Linux allows users to have files which are not listed,by default, ls command.These are called hidden files and are distinguishable from other files by the fact that their filenames begin with a (.)dot.Such a file which is executed everytime you log in to the system.
+
+Hidden files are listed by adding the -a option to the ls command.
+For eg:(.test).
+
+
+
+
+
+ 						Ouestion-2
+
+If we want to create sub-directories in a parent-directory using the single mkdir command.
+Then we need to use -p flag in the mkdir command to create the main directory first if it doesn't already exist, then the "brace expansion list" in which each directory is appended separately to the preceding path.
+
+
+
+>> cd Desktop
+>> ls
+>> mkdir -p assgn/{linux,python,notes}
+>> cd assgn
+>>ls
+Then ls command will result as-
+linux   python   notes
+
+
+
+
+						Question-3
+
+tac command vs cat command:-
+
+The cat and tac commands display the content of text files. cat is used to examine the contents of text files and to join parts of files together to form a larger file. whereas tac command is used to list the contents in reverse order.
+Suppose a file(r.txt) consists of-1,2,3,4,5,6,7,8,9.
+using cat command it will display as the numbers are-
+>> cat r.txt
+whereas using tac command, it will result the reverse of the numbers.
+>> tac r.txt

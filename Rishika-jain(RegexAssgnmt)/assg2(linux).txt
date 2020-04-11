@@ -1,0 +1,51 @@
+						   Linux Assignment-2
+							Question-1
+
+
+
+To change the umask value for any user permanently, we can go in the ~/.bashrc file and make changes in the umask value.
+
+>>sudo gedit ~/.bashrc
+Then change the current value of umask if present,or add the line.
+>>umask
+We'll get the changed value of umask which is permanently changed for that user.
+
+
+
+							Question-2
+
+
+The possible way to add an user without using adduser or useradd commands is:
+Edit /etc/passwd with vipw and add a new line for the new account. Create the home directory of the user with mkdir.
+We can fix peermissions with chmod.
+>>cd /home/newusername
+>>chmod go=
+Set the password with passwd.
+
+
+
+							Question-3
+
+
+No, we can't change the umask value to 0888 as the maximum value for umask is 666.
+
+
+
+
+							Question-4
+
+
+In useradd command, Use the -u(--uid)option to create a user with a specific UID.
+>>sudo useradd -u 1350 username.
+We can also verify the user's id using id command:
+>>id -u username
+1350.
+
+
+
+							Question-5
+
+
+We can change the group ownership of given files through chgrp command.
+>>chgrp [options] Group file..
+
